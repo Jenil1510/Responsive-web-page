@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99Firms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left-part">
+                <img src="99design.png" alt="">
+            </div>
+            <div class="right-part" id="myNav">
+                <ul class="list">
+                     <li class="navbar-toggle">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#home">HOME</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#services">
+                            SERVICES
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="menu-icon">
+                                <path
+                                    d="M16.682 19.674c.01-.012.014-.028.024-.04l6.982-7.714c.39-.434.39-1.138 0-1.572-.004-.004-.008-.006-.012-.008a.936.936 0 0 0-.712-.34H8.998a.948.948 0 0 0-.722.352l-.004-.004a1.202 1.202 0 0 0 0 1.572l6.998 7.754a.928.928 0 0 0 1.412 0z">
+                                </path>
+                            </svg>
+                        </a>
+                        <div class="sub-menu1">
+                            <ul class="sub-list">
+                                <li><a href="#">Python</a></li>
+                                <li><a href="#">Android</a></li>
+                                <li><a href="#">AI</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#software">SOFTWARE
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="arrow">
+                                <path
+                                    d="M16.682 19.674c.01-.012.014-.028.024-.04l6.982-7.714c.39-.434.39-1.138 0-1.572-.004-.004-.008-.006-.012-.008a.936.936 0 0 0-.712-.34H8.998a.948.948 0 0 0-.722.352l-.004-.004a1.202 1.202 0 0 0 0 1.572l6.998 7.754a.928.928 0 0 0 1.412 0z">
+                                </path>
+                            </svg>
+                        </a>
+                        <div class="sub-menu1">
+                            <ul class="sub-list">
+                                <li><a href="#">Vs-Studio</a></li>
+                                <li><a href="#">my-sql</a></li>
+                                <li><a href="#">Ubuntu</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a href="#about">ABOUT</a></li>
+                    <li class="dropdown"><a href="#blog">BLOG</a></li>
+                    <li class="dropdown"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="conent">
+        <div class="background">
+            <img src="bg1.jpeg" alt="">
+            <div class="text-photo">
+                <span class="line1">Agencies & Software You Can Trust </span><br>
+                <span class="line1">In <span class="font-color">Any</span> Industry,For <span class="font-color">Any</span> Business Size</span>
+            </div>
+            <div id="line2">
+                Explore Agencies by Services
+            </div>
+        </div>
+    </div>
+    <footer class="footer-part">
+        <div class="text">
+            <p class="last1">Our Selection is based on extensive research ,avalution and analysis,with the purpose of</p>
+            <p class="last2">prsenting you with the best agencies that will address your busines need</p>
+        </div>
+    </footer>
+</body>
+<script>
+    const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
+    const dropdownBTN = document.getElementsByClassName('dropdown');
+    toggleButton.addEventListener('click', function () {
+        for (var i = 0; i < dropdownBTN.length; i++)
+            dropdownBTN[i].classList.toggle('active')
+    })
+</script>
+
+</html>
